@@ -1,25 +1,27 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void insert(vector<int> &num , int n){
-    for(int i = 0 ; i<n ; i++){
-        int j=i-1;
-        int key = num[i];
-        while(key<num[j] && j>=0 ){
+
+void sort(vector<int> &num , int n){
+
+    for(int i = 0 ; i <n ; i++){
+       int j=i-1;
+       int key = num[i];
+        while(j>=0 && key<num[j]){
             num[j+1]=num[j];
             j--;
         }
-            num[j+1]=key;
+        num[j+1]=key;
     }
 }
 
-
-
 int main(){
-    vector<int> num ={5,3,6,1,7,4,9,2};
+    vector<int> num = {1,4,3,2,8,7,6,10};
     int n = num.size();
-    insert(num , n);
+    sort(num, n);
+    
+    for (int i : num){
+        cout<<i<<" ";
+    }
 
-    for(int i : num)
-    cout<<i<<" ";
 }
