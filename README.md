@@ -32,7 +32,7 @@ Whether you're preparing for **placements**, **competitive programming**, or sim
 
 | Topic                  | Status        | Questions                   |
 | ---------------------- | ------------- | --------------------------- |
-| 🧮 Arrays              | ✔ In Progress | [View Questions](./Arrays)  |
+| 🧮 Arrays              | ✔ In Progress | [View Questions](./2D ARRAY)  |
 | 🔤 Strings             | ✔ In Progress | [View Questions](./Strings) |
 | 🧱 Stack               | ⚒ Upcoming    | _Soon_                      |
 | 🌀 Queue               | ⚒ Upcoming    | _Soon_                      |
