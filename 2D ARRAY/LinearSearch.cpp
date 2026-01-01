@@ -1,30 +1,29 @@
-#include <iostream>
-#include <vector>
-#include <utility>
+#include<iostream>
+#include<vector>
+#include<utility>
 using namespace std;
 
-int main() {
-    vector<vector<int>> mat(3, vector<int>(3)); 
+int main(){
     int key = 21;
-
-    cout << "Enter the matrix:\n";
-
-    for(int i = 0; i < 3; i++) {
-        for(int j = 0; j < 3; j++) {
-            cin >> mat[i][j];
+    int row=3;
+    int col=2;
+    vector<vector <int>> matrix(row,vector <int>(col)) ;
+    //Input
+    cout<<"Enter the matrix: \n";
+    for(int i=0 ; i<row ; i++){
+        for(int j=0 ; j<matrix[i].size() ; j++){
+                cin>>matrix[i][j];
         }
     }
 
-    for(int i = 0; i < 3; i++) {
-        for(int j = 0; j < 3; j++) {
-            if(key == mat[i][j]) {
-                pair<int, int> pos = {i, j};
-                cout << "Key found at (" << pos.first << ", " << pos.second << ")";
-                return 0;
-            }
+    for(int i=0 ; i<row ; i++){
+        for(int j=0 ; j<matrix[i].size() ; j++){
+                if(key == matrix[i][j]){
+                    pair<int ,int> pos ={i,j};
+                    cout<<"Found at : "<< pos.first<<","<<pos.second<<endl;
+                }
         }
     }
 
-    cout << "Key not found";
     return 0;
 }
