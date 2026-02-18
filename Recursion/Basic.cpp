@@ -3,7 +3,7 @@ using namespace std;
 
 int rec(int n){
     if(n==0) return 0;
-    cout<<n<<endl;
+    cout<<n<<" -> ";
     return rec(n-1);
 }
 
